@@ -1,0 +1,22 @@
+# Terraform state — contains secrets, never commit
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Variable files — may contain secrets (SSH keys, AMIs you don't want public)
+*.tfvars
+*.tfvars.json
+
+# Local .terraform dirs (providers, modules cache)
+.terraform/
+.terraform.lock.hcl
+
+# Crash logs
+crash.log
+crash.*.log
+
+# CLI overrides
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
